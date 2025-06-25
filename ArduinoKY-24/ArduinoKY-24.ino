@@ -1,6 +1,6 @@
 const int sensorPin = A0;
 const int ledPin = 13;
-const int threshold = 874;
+const int threshold = 637;
 
 void setup() {
   Serial.begin(9600);

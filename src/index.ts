@@ -41,7 +41,7 @@ function setupSerialConnection() {
 
   // Ajuste a porta conforme necessário (COM3 no Windows, /dev/ttyUSB0 ou /dev/ttyACM0 no Linux)
   const port = new SerialPort({
-    path: 'COM4', // Substitua pela porta correta
+    path: 'COM3', // Substitua pela porta correta
     baudRate: 9600,
   });
 
