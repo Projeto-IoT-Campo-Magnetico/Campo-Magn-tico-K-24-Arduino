@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Monitoramento Magnético</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Leituras do Sensor Magnético</h1>
+        
+        <div class="filtro">
+            <label for="filtroEstado">Filtrar por estado:</label>
+            <select id="filtroEstado">
+                <option value="TODOS">Todos</option>
+                <option value="IMÃ_DETECTADO">Imã Detectado</option>
+                <option value="SEM_IMÃ">Sem Imã</option>
+            </select>
+            
+            <div class="filtro-pesquisa">
+                <label for="filtroPesquisa">Pesquisar:</label>
+                <input type="text" id="filtroPesquisa" placeholder="Digite valor ou estado...">
+            </div>
+        </div>
+        
+        <div class="grafico">
+            <canvas id="graficoLeituras"></canvas>
+        </div>
+        
+        <div class="tabela">
+            <table id="tabelaLeituras">
+                <thead>
+                    <tr>
+                        <th>Valor</th>
+                        <th>Estado</th>
+                        <th>Data/Hora</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- As linhas serão preenchidas por JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
